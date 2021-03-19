@@ -1,0 +1,11 @@
+fragment group on Group{
+    uuid
+    name
+    nsfw
+    groupImageUrl
+    description
+    listed
+    inviteLink
+    creationDate
+    lastEditDate
+}

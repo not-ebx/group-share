@@ -1,0 +1,7 @@
+fragment userData on User{
+    id
+    username
+    email 
+    joinDate
+    lastLogin
+}

@@ -1,0 +1,5 @@
+query GetMyGroups {
+    getMyGroups{
+        ...group
+    }
+}

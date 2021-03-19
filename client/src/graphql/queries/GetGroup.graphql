@@ -1,0 +1,5 @@
+query GetGroup($uuid: String!){
+    getGroup(uuid: $uuid){
+        ...group
+    }
+}

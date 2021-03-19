@@ -1,0 +1,8 @@
+mutation Login(
+    $loginid: String!,
+    $password: String!
+){
+    login(userdata: {loginid:$loginid, password: $password}){
+        ...userResponse
+    }
+}

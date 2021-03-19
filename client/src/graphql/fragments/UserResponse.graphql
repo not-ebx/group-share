@@ -1,0 +1,8 @@
+fragment userResponse on UserResponse {
+    errors {
+        ...fieldError
+    }
+    user { 
+        ...userData
+    }
+}
