@@ -20,6 +20,8 @@ import connectRedis from "connect-redis";
 
 const main = async () => {
     // Connect to Database
+    console.log(process.env);
+
     const conn = await createConnection({
         type: 'postgres',
         url: process.env.DATABASE_URL,
@@ -64,7 +66,7 @@ const main = async () => {
                 domain: __prod__ ? "domain.com" : undefined,
             },
             saveUninitialized: false,
-            secret: process.env.COOKIE_SECRET ? process.env.COOKIE_SECRET : "",
+            secret: process.env.SESSION_SECRET,
             resave: false
         })
     );
